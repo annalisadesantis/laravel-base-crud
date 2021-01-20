@@ -1,0 +1,31 @@
+#home{
+    height: 600px;
+    margin-bottom: $big_space;
+    background-color: $color_text;
+
+    h1{
+        color: #d3d3d3;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .card-container{
+        @include flex-row(flex-start,center);
+        flex-wrap: wrap;
+        margin-top: $big_space;
+
+        .card{
+            width: 200px;
+            height: 200px;
+            border: 2px solid #d3d3d3;
+            padding: $small_space;
+            @include flex-column(column,center,flex-start);
+            margin: $small_space;
+
+            p{
+                margin-top: $small_space;
+            }
+        }
+    }
+}

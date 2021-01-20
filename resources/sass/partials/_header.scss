@@ -1,0 +1,30 @@
+header{
+    @include flex-row(center,center);
+    background-color: #d3d3d3;
+
+    .nav{
+
+        ul{
+            list-style-type: none;
+
+            li{
+                display: inline-block;
+                margin: $small_space 0px;
+                font-size: $font_size;
+                font-weight: 400;
+
+
+                a{
+                    text-decoration: none;
+                    padding: $small_space $big_space;
+                    color: $color_text;
+
+                    &:hover{
+                        color: #43b3ae;
+                    }
+
+                }
+            }
+        }
+    }
+}
