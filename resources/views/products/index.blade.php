@@ -9,9 +9,37 @@
                 Tutti i Biscotti
             </h1>
             <div class="card-container">
-                <div class="card">
-
-                </div>
+                @foreach ($products as $product)
+                    <div class="card">
+                        <h1>
+                            {{ $product->nome}}
+                        </h1>
+                        <p>
+                            <strong>
+                                Marca:
+                            </strong>
+                            {{ $product->marca}}
+                        </p>
+                        <p>
+                            <strong>
+                                Peso:
+                            </strong>
+                            {{ $product->quantita}} Kg
+                        </p>
+                        <p>
+                            <strong>
+                                Descrizione:
+                            </strong>
+                            {{ $product->descrizione}}
+                        </p>
+                        <p>
+                            <strong>
+                                Prezzo:
+                            </strong>
+                            {{ $product->prezzo}} €
+                        </p>
+                    </div>
+                @endforeach
             </div>
         </div>
     </section>
