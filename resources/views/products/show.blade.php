@@ -3,46 +3,38 @@
 @section("page-title", "Dettagli")
 {{-- contenuti --}}
 @section("content")
-    <section id="biscotti">
+    <section id="biscotto">
         <div class="container">
             <h1>
-                Dettagli {{ $id }}
+                Dettagli {{ $product->nome }}
             </h1>
             <div class="card-container">
-                @foreach ($products as $product)
-                    <div class="card">
-                        <h1>
-                            {{ $product->nome}}
-                        </h1>
-                        <p>
-                            <strong>
-                                Marca:
-                            </strong>
-                            {{ $product->marca}}
-                        </p>
-                        <p>
-                            <strong>
-                                Peso:
-                            </strong>
-                            {{ $product->quantita}} Kg
-                        </p>
-                        <p>
-                            <strong>
-                                Descrizione:
-                            </strong>
-                            {{ $product->descrizione}}
-                        </p>
-                        <p>
-                            <strong>
-                                Prezzo:
-                            </strong>
-                            {{ $product->prezzo}} €
-                        </p>
-                        <a href="{{ route('products.show', ['product' => $product->id]) }}">
-                            Dettagli
-                        </a>
-                    </div>
-                @endforeach
+                <div class="card">
+                    <p>
+                        <strong>
+                            Marca:
+                        </strong>
+                        {{ $product->marca}}
+                    </p>
+                    <p>
+                        <strong>
+                            Peso:
+                        </strong>
+                        {{ $product->quantita}} Kg
+                    </p>
+                    <p>
+                        <strong>
+                            Descrizione:
+                        </strong>
+                        {{ $product->descrizione}}
+                    </p>
+                    <p>
+                        <strong>
+                            Prezzo:
+                        </strong>
+                        {{ $product->prezzo}} €
+                    </p>
+                </div>
             </div>
         </div>
     </section>

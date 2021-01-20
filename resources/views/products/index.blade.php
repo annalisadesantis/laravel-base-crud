@@ -14,31 +14,7 @@
                         <h1>
                             {{ $product->nome}}
                         </h1>
-                        <p>
-                            <strong>
-                                Marca:
-                            </strong>
-                            {{ $product->marca}}
-                        </p>
-                        <p>
-                            <strong>
-                                Peso:
-                            </strong>
-                            {{ $product->quantita}} Kg
-                        </p>
-                        <p>
-                            <strong>
-                                Descrizione:
-                            </strong>
-                            {{ $product->descrizione}}
-                        </p>
-                        <p>
-                            <strong>
-                                Prezzo:
-                            </strong>
-                            {{ $product->prezzo}} €
-                        </p>
-                        <a href="{{ route('products.show', ['product' => $product->id]) }}">
+                        <a href="{{ route('products.show', ['product' => $product->id] ) }}">
                             Dettagli
                         </a>
                     </div>
