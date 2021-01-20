@@ -50,10 +50,17 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        $data = [
-            'product' => Product::find($id)
-        ];
-        return view('products.show', $data);
+        // cerca il prodotto se non viene inserito il giusto url mi da null
+        $product = Product::find($id);
+        // null è uguale a falso e non entra nel if e fa abort
+        // se invece trova il prodotto, $product è true e allora entra nella if e mi restiturisce la view giusta
+        if ($product) {
+            $data = [
+                'product' => $product
+            ];
+            return view('products.show', $data);
+        }
+        abort(404);
     }
 
     /**
