@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>@yield("page-title", "Shop-Online")</title>
+        <title>@yield("page-title", "Biscotti")</title>
         {{-- CSS --}}
         <link rel="stylesheet" href="{{ asset('css/app.css')}}">
         {{-- GOOGLE FONT --}}

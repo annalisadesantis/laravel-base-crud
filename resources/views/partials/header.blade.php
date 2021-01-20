@@ -2,13 +2,13 @@
     <div class="nav">
         <ul>
             <li>
-                <a href="#">
+                <a href="{{ route('homepage')}}">
                     Home
                 </a>
             </li>
             <li>
                 <a href="#">
-                    Prodotti
+                    Biscotti
                 </a>
             </li>
             <li>
