@@ -38,6 +38,9 @@
                             </strong>
                             {{ $product->prezzo}} €
                         </p>
+                        <a href="{{ route('products.show', ['product' => $product->id]) }}">
+                            Dettagli
+                        </a>
                     </div>
                 @endforeach
             </div>

@@ -16,7 +16,7 @@
 
         .card{
             width: 250px;
-            height: 200px;
+            height: 250px;
             border: 2px solid #d3d3d3;
             padding: $small_space;
             @include flex-column(column,center,flex-start);
@@ -28,6 +28,12 @@
                 &:last-child{
                     margin-bottom: $small_space;
                 }
+            }
+
+            a{
+                text-decoration: none;
+                color: #d3d3d3;
+                margin-top: $small_space;
             }
         }
     }
