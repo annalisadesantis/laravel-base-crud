@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="mt-4 mb-4">Inserimento nuovo biscotto</h1>
+                    <h1 class="mt-4 mb-4">Inserisci un nuovo biscotto</h1>
                     <form method="POST" action="{{ route('products.store') }}">
                         @csrf
                         <div class="form-group">
