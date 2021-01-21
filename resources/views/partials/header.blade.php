@@ -12,7 +12,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ route('products.create')}}">
                     Form
                 </a>
             </li>
