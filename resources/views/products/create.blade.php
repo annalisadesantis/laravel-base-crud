@@ -28,7 +28,7 @@
                         </div>
                         <div class="form-group">
                             <label>Prezzo</label>
-                            <input type="number" name="prezzo" class="form-control">
+                            <input type="number"  step='0.01' name="prezzo" class="form-control">
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-success">
