@@ -14,10 +14,13 @@ body {
 }
 
 header {
+  background-color: #d3d3d3;
+}
+
+header .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #d3d3d3;
 }
 
 header .nav ul {
@@ -41,16 +44,21 @@ header .nav ul li a:hover {
   color: #43b3ae;
 }
 
-#biscotti,
 #home,
 #biscotto {
-  margin-bottom: 20px;
+  background-color: #838996;
+  height: 100vh;
+}
+
+#biscotti,
+#form {
   background-color: #838996;
 }
 
 #biscotti h1,
 #home h1,
-#biscotto h1 {
+#biscotto h1,
+#form h1 {
   color: #d3d3d3;
   font-size: 30px;
   text-align: center;
@@ -59,7 +67,8 @@ header .nav ul li a:hover {
 
 #biscotti .card-container,
 #home .card-container,
-#biscotto .card-container {
+#biscotto .card-container,
+#form .card-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -69,7 +78,8 @@ header .nav ul li a:hover {
 
 #biscotti .card-container .card,
 #home .card-container .card,
-#biscotto .card-container .card {
+#biscotto .card-container .card,
+#form .card-container .card {
   width: 250px;
   height: 250px;
   border: 2px solid #d3d3d3;
@@ -79,23 +89,27 @@ header .nav ul li a:hover {
   justify-content: center;
   align-items: flex-start;
   margin: 10px;
+  background-color: #838996;
 }
 
 #biscotti .card-container .card p,
 #home .card-container .card p,
-#biscotto .card-container .card p {
+#biscotto .card-container .card p,
+#form .card-container .card p {
   margin-top: 10px;
 }
 
 #biscotti .card-container .card p:last-child,
 #home .card-container .card p:last-child,
-#biscotto .card-container .card p:last-child {
+#biscotto .card-container .card p:last-child,
+#form .card-container .card p:last-child {
   margin-bottom: 10px;
 }
 
 #biscotti .card-container .card a,
 #home .card-container .card a,
-#biscotto .card-container .card a {
+#biscotto .card-container .card a,
+#form .card-container .card a {
   text-decoration: none;
   color: #d3d3d3;
   margin-top: 10px;

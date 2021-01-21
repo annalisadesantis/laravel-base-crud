@@ -1,6 +1,13 @@
-#biscotti, #home, #biscotto{
-    margin-bottom: $big_space;
+#home, #biscotto{
     background-color: $color_text;
+    height: 100vh;
+}
+
+#biscotti, #form{
+    background-color: $color_text;
+}
+
+#biscotti, #home, #biscotto, #form{
 
     h1{
         color: #d3d3d3;
@@ -21,6 +28,7 @@
             padding: $small_space;
             @include flex-column(column,center,flex-start);
             margin: $small_space;
+            background-color: $color_text;
 
             p{
                 margin-top: $small_space;

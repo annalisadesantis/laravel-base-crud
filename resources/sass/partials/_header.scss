@@ -1,8 +1,8 @@
 header{
-    @include flex-row(center,center);
     background-color: #d3d3d3;
 
     .nav{
+        @include flex-row(center,center);
 
         ul{
             list-style-type: none;
