@@ -10,7 +10,7 @@
                     <h1>
                         Tutti i Prodotti
                     </h1>
-                    <a href="#" class="btn btn-primary inserisci">
+                    <a href="{{ route('products.create') }}" class="btn btn-primary inserisci">
                         Inserisci nuovo prodotto
                     </a>
                     <table class="table">
@@ -45,9 +45,13 @@
                                         <a href="{{ route('products.edit', ['product' => $product->id] ) }}" class="btn btn-warning">
                                             Modifica
                                         </a>
-                                        <a href="#" class="btn btn-danger">
+                                        <form method="POST" class="d-inline-block" action="{{ route('products.destroy', ['product' => $product->id] ) }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">
                                             Cancella
-                                        </a>
+                                        </button>
+                                    </form>
                                     </td>
                                 </tr>
                             @endforeach
