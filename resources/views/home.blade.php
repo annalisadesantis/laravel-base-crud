@@ -1,6 +1,6 @@
 @extends("layouts.app")
 {{-- titolo --}}
-@section("page-title", "Home-Biscotti")
+@section("page-title", "Home")
 {{-- contenuti --}}
 @section("content")
     <section id="home">

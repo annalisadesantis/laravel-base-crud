@@ -16,33 +16,15 @@
         padding-top: 30px;
     }
 
-    .card-container{
-        @include flex-row(flex-start,center);
-        flex-wrap: wrap;
-        margin-top: $big_space;
+    .container{
+        @include flex-column(column,center,center);
 
-        .card{
-            width: 250px;
-            height: 250px;
-            border: 2px solid #d3d3d3;
-            padding: $small_space;
-            @include flex-column(column,center,flex-start);
-            margin: $small_space;
-            background-color: $color_text;
-
-            p{
-                margin-top: $small_space;
-
-                &:last-child{
-                    margin-bottom: $small_space;
-                }
-            }
-
-            a{
-                text-decoration: none;
-                color: #d3d3d3;
-                margin-top: $small_space;
-            }
+        a.inserisci{
+            margin: $big_space 0px;
+            display: block;
         }
     }
+
+
+
 }

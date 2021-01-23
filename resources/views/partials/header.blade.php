@@ -8,12 +8,12 @@
             </li>
             <li>
                 <a href="{{ route('products.index')}}">
-                    Biscotti
+                    Prodotti
                 </a>
             </li>
             <li>
                 <a href="{{ route('products.create')}}">
-                    Form
+                    Inserisci
                 </a>
             </li>
         </ul>

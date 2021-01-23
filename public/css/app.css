@@ -8,11 +8,6 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 header {
   background-color: #d3d3d3;
 }
@@ -65,53 +60,21 @@ header .nav ul li a:hover {
   padding-top: 30px;
 }
 
-#biscotti .card-container,
-#home .card-container,
-#biscotto .card-container,
-#form .card-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-#biscotti .card-container .card,
-#home .card-container .card,
-#biscotto .card-container .card,
-#form .card-container .card {
-  width: 250px;
-  height: 250px;
-  border: 2px solid #d3d3d3;
-  padding: 10px;
+#biscotti .container,
+#home .container,
+#biscotto .container,
+#form .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  margin: 10px;
-  background-color: #838996;
+  align-items: center;
 }
 
-#biscotti .card-container .card p,
-#home .card-container .card p,
-#biscotto .card-container .card p,
-#form .card-container .card p {
-  margin-top: 10px;
-}
-
-#biscotti .card-container .card p:last-child,
-#home .card-container .card p:last-child,
-#biscotto .card-container .card p:last-child,
-#form .card-container .card p:last-child {
-  margin-bottom: 10px;
-}
-
-#biscotti .card-container .card a,
-#home .card-container .card a,
-#biscotto .card-container .card a,
-#form .card-container .card a {
-  text-decoration: none;
-  color: #d3d3d3;
-  margin-top: 10px;
+#biscotti .container a.inserisci,
+#home .container a.inserisci,
+#biscotto .container a.inserisci,
+#form .container a.inserisci {
+  margin: 20px 0px;
+  display: block;
 }
 

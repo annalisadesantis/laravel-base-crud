@@ -5,35 +5,37 @@
 @section("content")
     <section id="biscotto">
         <div class="container">
-            <h1>
-                Dettagli {{ $product->nome }}
-            </h1>
-            <div class="card-container">
-                <div class="card">
-                    <p>
-                        <strong>
-                            Marca:
-                        </strong>
-                        {{ $product->marca}}
-                    </p>
-                    <p>
-                        <strong>
-                            Peso:
-                        </strong>
-                        {{ $product->quantita}} Kg
-                    </p>
-                    <p>
-                        <strong>
-                            Descrizione:
-                        </strong>
-                        {{ $product->descrizione}}
-                    </p>
-                    <p>
-                        <strong>
-                            Prezzo:
-                        </strong>
-                        {{ $product->prezzo}} €
-                    </p>
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="mt-4 mb-4">
+                        Dettaglio: {{ $product->nome }}
+                    </h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Marca</th>
+                                <th scope="col">Peso</th>
+                                <th scope="col">Descrizione</th>
+                                <th scope="col">Prezzo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    {{ $product->marca}}
+                                </td>
+                                <td>
+                                    {{ $product->quantita}} Kg
+                                </td>
+                                <td>
+                                    {{ $product->descrizione}}
+                                </td>
+                                <td>
+                                    &euro; {{ number_format($product->prezzo, 2, ',', ' ') }}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
