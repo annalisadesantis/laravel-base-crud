@@ -21,7 +21,7 @@
                                 <th scope="col">Nome</th>
                                 <th scope="col">Marca</th>
                                 <th scope="col">Prezzo</th>
-                                <th scope="col">Azioni</th>
+                                <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody>
