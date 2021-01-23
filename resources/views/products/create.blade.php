@@ -10,6 +10,7 @@
                     <h1 class="mt-4 mb-4">Inserisci un nuovo biscotto</h1>
                     <form method="POST" action="{{ route('products.store') }}">
                         @csrf
+                        @include('partials.validation-errors')
                         <div class="form-group">
                             <label>Nome</label>
                             <input type="text" name="nome" class="form-control">

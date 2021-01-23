@@ -50,7 +50,7 @@ class ProductController extends Controller
         $product->save();
 
         // faccio sempre una redirect verso un rotta get
-        return redirect()->route('products.index');
+        return redirect()->route('products.index')->withSuccess('Salvataggio avvenuto correttamente');
     }
 
     /**
@@ -104,7 +104,7 @@ class ProductController extends Controller
 
         $product->update($data);
 
-        return redirect()->route('products.show', ['product' => $product->id]);
+        return redirect()->route('products.show', ['product' => $product->id])->withSuccess('Modifica avvenuta correttamente');
     }
 
     /**
@@ -117,6 +117,6 @@ class ProductController extends Controller
     {
         $product->delete();
 
-        return redirect()->route('products.index');
+        return redirect()->route('products.index')->withSuccess('Cancellazione avvenuta correttamente');
     }
 }

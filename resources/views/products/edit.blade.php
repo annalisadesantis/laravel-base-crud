@@ -13,6 +13,7 @@
                     <form method="POST" action="{{ route('products.update', ['product' => $product->id]) }}">
                         @csrf
                         @method('PUT')
+                        @include('partials.validation-errors')
                         <div class="form-group">
                             <label>Nome</label>
                             <input type="text" name="nome" value="{{ $product->nome }}" class="form-control">

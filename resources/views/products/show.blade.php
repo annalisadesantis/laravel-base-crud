@@ -10,6 +10,7 @@
                     <h1 class="mt-4 mb-4">
                         Dettaglio: {{ $product->nome }}
                     </h1>
+                    @include('partials.success-error-messages')
                     <table class="table">
                         <thead>
                             <tr>

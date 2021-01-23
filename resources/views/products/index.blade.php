@@ -13,6 +13,7 @@
                     <a href="{{ route('products.create') }}" class="btn btn-primary inserisci">
                         Inserisci nuovo prodotto
                     </a>
+                    @include('partials.success-error-messages')
                     <table class="table">
                         <thead>
                             <tr>
