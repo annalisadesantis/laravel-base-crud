@@ -42,7 +42,7 @@
                                         <a href="{{ route('products.show', ['product' => $product->id] ) }}" class="btn btn-success">
                                             Dettagli
                                         </a>
-                                        <a href="#" class="btn btn-warning">
+                                        <a href="{{ route('products.edit', ['product' => $product->id] ) }}" class="btn btn-warning">
                                             Modifica
                                         </a>
                                         <a href="#" class="btn btn-danger">
